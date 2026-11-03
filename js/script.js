@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
         moreSlide.className = "swiper-slide";
 
         const moreCard = document.createElement("a");
-        moreCard.href = "/projects.html";
+        moreCard.href = "projects.html";
         moreCard.className = "project-card view-more-card";
 
         const moreContent = document.createElement("div");
