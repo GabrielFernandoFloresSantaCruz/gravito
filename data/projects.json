@@ -1,0 +1,143 @@
+
+  {
+    "projects": [
+      {
+        "id": "id-game",
+        "title": "ID",
+        "category": "Videojuego",
+        "filter": "game",
+        "type": "game",
+        "year": "2026",
+        "client": "Proyecto Personal",
+        "heroImage": "assets/images/Id/IdSplash.png",
+        "gallery": [
+          "assets/images/Id/IdSplash.png",
+          "assets/images/Id/Player.png",
+          "assets/images/Id/boss.png"
+        ],
+        "videos": [],
+        "description": "Una aventura de plataformas y puzzles en pixel art futurista, donde manejas una estela de energía para reconstruir tu identidad dentro de un sistema digital colapsado.",
+        "problem": "El jugador despierta en un entorno artificial y fragmentado, completamente borrado por la corrupción, sin recuerdos, forma ni propósito inicial.",
+        "solution": "Utilizar la 'Estela de Identidad' como mecánica central interactiva para activar nodos de memoria, reparar sectores dañados, resolver puzzles ambientales y purificar los errores del sistema (Glitches).",
+        "results": "Diseño conceptual completo del GDD (Documento de Diseño de Juego), incluyendo un bucle de juego basado en la progresión de 4 mundos (System Base, Data Core, Ascension Protocol e Identity Core), junto con su dirección artística basada en estéticas synthwave.",
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "ByCoding",
+          "Piskel"
+        ],
+        "externalUrl": "ExtraPages/Juego/index.html"
+      },
+      {
+        "id": "anemocora-web",
+        "title": "Anemócora",
+        "category": "Desarrollo Web",
+        "filter": "web",
+        "type": "website",
+        "year": "2026",
+        "client": "Editorial Anemócora",
+        "heroImage": "assets/images/Anemocora/LogoAnemocora.png",
+        "gallery": [
+          "assets/images/Anemocora/acercaPage.png",
+          "assets/images/Anemocora/BiodiversicuentosPAge.png",
+          "assets/images/Anemocora/editorialPage.png",
+          "assets/images/Anemocora/homePage.png",
+          "assets/images/Anemocora/SeriePage.png"
+        ],
+        "videos": [],
+        "description": "Rediseño y desarrollo del sitio web oficial para una editorial boliviana independiente de literatura infantil y juvenil enfocada en la biodiversidad, el medio ambiente y los saberes locales.",
+        "problem": "La editorial necesitaba renovar su presencia digital con una plataforma que reflejara su identidad orgánica basada en la naturaleza ('semillas de cambio'), pero requería un sistema que no estuviera sobrecargado de elementos visuales distractores y que fuera fácil de mantener.",
+        "solution": "Implementación de un diseño limpio y fluido optimizado para la lectura. Se estructuraron esquemas intuitivos y modulares utilizando WordPress para garantizar que el cliente pudiera actualizar de forma autónoma los contenidos de la web sin necesidad de asistencia técnica constante.",
+        "results": "Creación y despliegue completo de 5 páginas clave del sitio web con una arquitectura de información clara, una navegación intuitiva para el público y un sistema de gestión dinámico para las publicaciones editoriales.",
+        "technologies": [
+          "WordPress",
+          "Elementor",
+          "Smart Post"
+        ],
+        "externalUrl": "https://anemocora.com"
+      },
+      
+  {
+    "id": "chixi-media-landing",
+    "title": "Ch'ixi Media",
+    "category": "Desarrollo Web",
+    "filter": "web",
+    "type": "website",
+    "year": "2025",
+    "client": "Proyecto Académico",
+    "heroImage": "assets/images/ChixiMedia/Logo.png",
+    "gallery": [
+      "assets/images/ChixiMedia/homePage.png",
+      "assets/images/ChixiMedia/servicesPage.png",
+      "assets/images/ChixiMedia/testimonialsPage.png",
+      "assets/images/ChixiMedia/webinarPage.png"
+    ],
+    "videos": [],
+    "description": "Diseño y desarrollo de una landing page demostrativa para Ch'ixi Media, una propuesta de marketing digital enfocada en ayudar a ilustradores y artistas a mejorar su visibilidad y conectar con oportunidades en eventos. La página presenta los beneficios del servicio y promueve la inscripción a webinars mediante un llamado a la acción.",
+    "problem": "La propuesta requería comunicar de manera clara y atractiva cómo Ch'ixi Media podía ayudar a artistas e ilustradores a superar la falta de visibilidad y acceder a oportunidades profesionales. El desafío consistía en organizar esta información dentro de una única página que despertara interés y guiara al visitante hacia una acción concreta.",
+    "solution": "Se diseñó y desarrolló una landing page con una estructura enfocada en la conversión, integrando una sección principal con contenido audiovisual, beneficios del servicio, información explicativa, testimonios, preguntas frecuentes y un formulario de inscripción a webinars. Se priorizó la jerarquía visual, la navegación por secciones y la presencia de llamados a la acción que dirigen al usuario hacia la reserva de su cupo.",
+    "results": "Desarrollo de una landing page demostrativa que presenta la propuesta de valor de Ch'ixi Media y concentra su funcionalidad principal en el llamado a la acción para reservar un cupo en el webinar. El alcance del proyecto se limitó exclusivamente a esta página de muestra; por ello, aunque se incluyeron una barra de navegación y un footer como parte del diseño visual, sus enlaces a otras páginas no fueron implementados. No se desarrolló un sitio web completo ni se integraron funcionalidades adicionales fuera del alcance de la landing page.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "externalUrl": "ExtraPages/mkt-landing/index.html"
+  },
+
+  {
+    "id": "nox-app",
+    "title": "NOX",
+    "category": "Aplicación Móvil",
+    "filter": "App",
+    "type": "App",
+    "year": "2025",
+    "client": "Proyecto Académico Grupal",
+    "heroImage": "assets/images/Nox/NoxCover.png",
+    "gallery": [
+      "assets/images/Nox/login.png",
+      "assets/images/Nox/register.png",
+      "assets/images/Nox/map.png",
+      "assets/images/Nox/events.png",
+      "assets/images/Nox/food.png",
+      "assets/images/Nox/cart.png",
+      "assets/images/Nox/payment.png"
+    ],
+    "videos": [],
+    "description": "Diseño y desarrollo colaborativo de NOX, una aplicación móvil orientada al turismo nocturno que permite descubrir actividades, restaurantes, fiestas y eventos mediante un mapa interactivo en tiempo real. Inspirada en experiencias de exploración como Pokémon GO, la propuesta integra opciones de reserva de comida, compra de entradas y pagos digitales desde una misma plataforma.",
+    "problem": "La oferta de entretenimiento nocturno suele encontrarse dispersa entre diferentes plataformas, dificultando que los usuarios descubran actividades cercanas, consulten eventos disponibles y realicen reservas o compras de manera sencilla. El desafío consistía en centralizar estas experiencias dentro de una aplicación intuitiva que facilitara la exploración y el acceso a servicios nocturnos.",
+    "solution": "Se planteó una experiencia móvil basada en un mapa interactivo que permite visualizar actividades y establecimientos, diferenciando las opciones gastronómicas de los eventos y fiestas. La aplicación incorpora flujos de exploración, reserva de comida, compra de entradas y pagos digitales. Como parte de mi contribución al proyecto grupal, me encargué del desarrollo del sistema de autenticación de usuarios, el carrito de compras y el proceso de selección de métodos de pago.",
+    "results": "Desarrollo colaborativo de una propuesta de aplicación móvil que centraliza la exploración de actividades nocturnas y los procesos de reserva y compra. Se estructuraron experiencias diferenciadas para gastronomía y eventos, acompañadas de una interfaz visual enfocada en la navegación intuitiva. Mi participación se concentró en la implementación de los flujos de inicio de sesión, registro de usuarios, gestión del carrito de compras y métodos de pago, contribuyendo a la experiencia de compra dentro de la aplicación.",
+    "technologies": [
+      "Figma",
+      "Ionic"
+    ],
+    "externalUrl": ""
+  },
+
+  {
+    "id": "anestesia-lyric-video",
+    "title": "Anestesia",
+    "category": "Motion Graphics",
+    "filter": "motion",
+    "type": "video",
+    "year": "2025",
+    "client": "Proyecto Académico Grupal",
+    "heroImage": "assets/images/Anestesia/AnestesiaCover.png",
+    "gallery": [],
+    "videos": [
+      "assets/video/Anestesia.webm"
+    ],
+    "description": "Producción colaborativa de un lyric video para Anestesia, canción original de Lomas Sound, agrupación musical de La Paz, Bolivia. El proyecto combina animación tipográfica y motion graphics para representar visualmente la letra, el ritmo y la identidad de la canción.",
+    "problem": "El desafío consistía en transformar una composición musical en una experiencia audiovisual dinámica, logrando que la letra de la canción tuviera protagonismo visual sin perder sincronización con el ritmo. Además, era necesario mantener una estética coherente entre las diferentes secciones desarrolladas por los integrantes del equipo.",
+    "solution": "Se desarrolló un lyric video mediante la combinación de animación y motion graphics, utilizando composiciones tipográficas, transiciones y movimientos sincronizados con la música. Mi participación se centró específicamente en la animación tipográfica, trabajando el movimiento, la composición y las transiciones de los textos para reforzar la expresividad de la letra y acompañar el ritmo musical.",
+    "results": "Realización colaborativa de un lyric video completo de 1 minuto y 49 segundos, integrando las distintas secciones de animación y motion graphics desarrolladas por el equipo. Mi contribución permitió dar dinamismo y protagonismo a la tipografía mediante secuencias animadas que complementan la identidad visual y musical de Anestesia.",
+    "technologies": [
+      "After Effects"
+    ],
+    "externalUrl": ""
+  }
+    ]
+    
+  }

@@ -1,0 +1,1217 @@
+
+/* =========================================
+   VARIABLES
+========================================= */
+
+:root {
+  --bg: #070b14;
+  --surface: rgba(255,255,255,0.03);
+  --border: rgba(255,255,255,0.08);
+
+  --primary: #00e5ff;
+  --secondary: #ff4fd8;
+
+  --text: #ffffff;
+  --muted: #94a3b8;
+
+  --gradient: linear-gradient(
+    135deg,
+    #00e5ff,
+    #ff4fd8
+  );
+
+  --shadow: 0 0 40px rgba(0,229,255,0.15);
+}
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Ubuntu", sans-serif;
+    overflow-x: hidden;
+}
+
+/* TÍTULOS */
+
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+/* TEXTOS GENERALES */
+
+p, a, span, li, label,
+button, input, textarea, select {
+    font-family: "Ubuntu", sans-serif;
+}
+
+p {
+    font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.grid-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    );
+
+  background-size: 60px 60px;
+
+  mask-image: radial-gradient(
+    circle at center,
+    black 30%,
+    transparent 90%
+  );
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  padding: 1.5rem 8%;
+
+  background: rgba(7,11,20,0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+
+  transition: background 0.3s ease;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: white;
+}
+
+.logo-img {
+  display: block;
+  width: clamp(90px, 11vw, 145px);
+  height: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 2.5vw, 2rem);
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--muted);
+  font-size: 0.95rem;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: white;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+
+  background: var(--gradient);
+  color: black;
+  font-weight: 700;
+
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+}
+
+.menu-toggle,
+.mobile-contact {
+  display: none;
+}
+
+/* =========================================
+   HERO - ESCRITORIO
+========================================= */
+
+.project-hero {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+
+  min-height: 100vh;
+  min-height: 100svh;
+
+  padding: 10rem 8% 7rem;
+}
+
+.hero-content,
+.hero-visual {
+  position: relative;
+  min-width: 0;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+
+  color: var(--primary);
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+
+.hero-content h1 {
+  margin: 2rem 0;
+
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  line-height: 1.12;
+  overflow-wrap: break-word;
+}
+
+.hero-content p {
+  max-width: 600px;
+
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+
+  background: var(--gradient);
+  color: black;
+  font-weight: 700;
+
+  transition: transform 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: clamp(350px, 42vw, 550px);
+
+  overflow: hidden;
+  border-radius: 2rem;
+
+  background-color: rgba(255,255,255,0.04);
+  background-size: cover;
+  background-position: center;
+
+  border: 1px solid var(--border);
+}
+
+/* =========================================
+   SECCIONES GENERALES
+========================================= */
+
+.info-section,
+.result-section,
+.tech-section,
+.video-section {
+  padding: 0 8% 8rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+/* =========================================
+   PROBLEMA Y SOLUCIÓN
+========================================= */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.info-card {
+  min-width: 0;
+  padding: 3rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+}
+
+.info-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.info-card p {
+  color: var(--muted);
+  line-height: 1.8;
+  overflow-wrap: break-word;
+}
+
+/* =========================================
+   RESULTADO
+========================================= */
+
+.result-box {
+  padding: 5rem;
+  text-align: center;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+}
+
+.result-box h2 {
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.result-box p {
+  max-width: 800px;
+  margin: auto;
+
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+/* =========================================
+   VIDEO
+========================================= */
+
+.video-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.video-container iframe,
+.video-grid iframe {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  aspect-ratio: 16 / 9;
+
+  border: none;
+  border-radius: 1.5rem;
+}
+
+/* =========================================
+   GALERÍA SWIPER
+========================================= */
+
+.project-gallery {
+  padding: 0 8% 8rem;
+}
+
+.gallerySwiper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1.5rem;
+}
+
+.gallerySwiper .swiper-wrapper {
+    align-items: stretch;
+}
+
+.gallerySwiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    height: 550px;
+
+    padding: 2rem;
+
+    background: rgba(255,255,255,0.025);
+    border: 1px solid var(--border);
+    border-radius: 1.5rem;
+}
+
+/* IMÁGENES COMPLETAS Y CENTRADAS */
+
+.gallerySwiper .swiper-slide img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 0.8rem;
+}
+
+/* FLECHAS DE NAVEGACIÓN */
+
+.gallerySwiper .swiper-button-next,
+.gallerySwiper .swiper-button-prev {
+    color: white;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    background: rgba(7,11,20,0.75);
+    backdrop-filter: blur(10px);
+}
+
+.gallerySwiper .swiper-button-next::after,
+.gallerySwiper .swiper-button-prev::after {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* =========================================
+   TECNOLOGÍAS
+========================================= */
+
+.tech-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-card {
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+
+  text-align: center;
+  overflow-wrap: anywhere;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0,229,255,0.3);
+  box-shadow: var(--shadow);
+}
+
+/* =========================================
+   OTROS BLOQUES MODULARES
+========================================= */
+
+.project-videos {
+  padding: 0 8% 8rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+}
+
+.case-study {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+
+  padding: 0 8% 8rem;
+}
+
+.case-card {
+  min-width: 0;
+  padding: 2rem;
+  border-radius: 2rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.case-card h3 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.tech-tag {
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  padding: 3rem 8%;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-content p {
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .project-hero {
+    gap: 2rem;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2.3rem, 4vw, 3.3rem);
+  }
+
+  .info-section,
+  .result-section,
+  .tech-section,
+  .video-section,
+  .project-gallery,
+  .project-videos,
+  .case-study {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .info-card {
+    padding: 2rem;
+  }
+
+  .result-box {
+    padding: 3.5rem;
+  }
+
+  .case-study {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   MÓVIL
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+
+    padding: 1rem 5%;
+  }
+
+  .navbar {
+    position: relative;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .navbar .logo-img {
+    width: clamp(90px, 28vw, 125px);
+  }
+
+  /* HAMBURGUESA */
+
+  .menu-toggle {
+    position: relative;
+    z-index: 10002;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    margin-left: auto;
+    flex-shrink: 0;
+
+    border: 1px solid rgba(0,229,255,0.35);
+    border-radius: 10px;
+    background: rgba(0,229,255,0.06);
+
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 23px;
+    height: 2px;
+
+    border-radius: 2px;
+    background: var(--primary);
+
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* MENÚ DESPLEGABLE */
+
+  .navbar .nav-links {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    z-index: 10001;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    width: 100%;
+    max-height: calc(100svh - 100px);
+    overflow-y: auto;
+
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+
+    background: rgba(7,11,20,0.98);
+    border: 1px solid rgba(0,229,255,0.25);
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.25s ease,
+      visibility 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .navbar .nav-links.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .navbar .nav-links li {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 14px 12px;
+
+    color: var(--muted);
+    white-space: normal;
+    border-radius: 8px;
+  }
+
+  .navbar .nav-links a:hover,
+  .navbar .nav-links a.active {
+    color: white;
+    background: rgba(0,229,255,0.09);
+  }
+
+  .navbar .mobile-contact {
+    display: block;
+  }
+
+  .navbar > .nav-btn {
+    display: none;
+  }
+
+  /* =====================================
+     HERO CON IMAGEN DE FONDO
+  ===================================== */
+
+  .project-hero {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+
+    min-height: 100svh;
+    gap: 0;
+
+    padding: 9rem 6% 5rem;
+
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(7,11,20,0.25) 0%,
+        rgba(7,11,20,0.55) 35%,
+        rgba(7,11,20,0.9) 75%,
+        #070b14 100%
+      ),
+      var(--project-hero-image, none);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .project-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-tag {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    background: rgba(7,11,20,0.65);
+    border-color: rgba(0,229,255,0.25);
+  }
+
+  .hero-content h1 {
+    margin: 1.5rem 0;
+    font-size: clamp(2.3rem, 8vw, 3.5rem);
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    max-width: 100%;
+    color: #e2e8f0;
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .hero-buttons {
+    margin-top: 2rem;
+  }
+
+  .hero-buttons .primary-btn {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  /* La imagen original no se repite
+     como una segunda columna en móvil */
+
+  .project-hero .hero-visual {
+    display: none;
+  }
+
+  /* SECCIONES */
+
+  .info-section,
+  .result-section,
+  .tech-section,
+  .video-section,
+  .project-gallery,
+  .project-videos,
+  .case-study {
+    padding: 0 6% 5rem;
+  }
+
+  .info-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .info-card {
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .info-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .result-box {
+    padding: 3rem 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .result-box h2 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  /* MULTIMEDIA */
+
+  .video-container {
+    gap: 1.5rem;
+  }
+
+  .video-container iframe,
+  .video-grid iframe {
+    width: 100%;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    border-radius: 1rem;
+  }
+
+
+/* =========================================
+   GALERÍA SWIPER - RESPONSIVE
+========================================= */
+
+.gallerySwiper {
+    border-radius: 1rem;
+}
+
+.gallerySwiper .swiper-slide {
+    height: 420px;
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.gallerySwiper .swiper-slide img {
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 0.6rem;
+}
+
+.gallerySwiper .swiper-button-next,
+.gallerySwiper .swiper-button-prev {
+    width: 34px;
+    height: 34px;
+}
+
+  .gallerySwiper .swiper-button-next,
+  .gallerySwiper .swiper-button-prev {
+    width: 34px;
+    height: 34px;
+  }
+
+  .case-study {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .case-card {
+    border-radius: 1.5rem;
+  }
+
+  /* TECNOLOGÍAS */
+
+  .tech-grid {
+    gap: 0.75rem;
+  }
+
+  .tech-card {
+    padding: 0.8rem 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  /* FOOTER */
+
+  footer {
+    padding: 3rem 6%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 380px) {
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .project-hero {
+    padding: 8rem 1rem 4rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-buttons .primary-btn {
+    width: 100%;
+    padding: 0.9rem 1.25rem;
+  }
+
+  .info-section,
+  .result-section,
+  .tech-section,
+  .video-section,
+  .project-gallery,
+  .project-videos,
+  .case-study {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .info-card,
+  .result-box {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* =========================================
+   ACCESIBILIDAD
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .menu-toggle span,
+  .navbar .nav-links,
+  .primary-btn,
+  .tech-card {
+    transition: none !important;
+  }
+}
+
+
+@media (max-width: 380px) {
+
+    .gallerySwiper .swiper-slide {
+        height: 360px;
+        padding: 1rem;
+    }
+
+    .gallerySwiper .swiper-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+footer .logo-img {
+    width: 240px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   JERARQUÍA TIPOGRÁFICA — PROJECT
+========================================= */
+
+/* NAVBAR */
+
+.nav-links a {
+    font-weight: 500;
+}
+
+.nav-btn {
+    font-weight: 700;
+}
+
+/* HERO */
+
+.hero-tag {
+    font-weight: 500;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* BOTONES */
+
+.primary-btn {
+    font-weight: 700;
+}
+
+/* TÍTULOS DE SECCIÓN */
+
+.section-title h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+}
+
+/* PROBLEMA Y SOLUCIÓN */
+
+.info-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.info-card p {
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* RESULTADOS */
+
+.result-box h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+}
+
+.result-box p {
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* TECNOLOGÍAS */
+
+.tech-card,
+.tech-tag {
+    font-weight: 500;
+}
+
+/* TARJETAS DE ESTUDIO DE CASO */
+
+.case-card h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.case-card p {
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+.footer-content p {
+    font-weight: 400;
+}
+
+
+/* =========================================
+   TIPOGRAFÍA RESPONSIVE — PROJECT
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .hero-content h1 {
+        font-size: clamp(2.3rem, 4vw, 3.3rem);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: clamp(2.3rem, 8vw, 3.5rem);
+        line-height: 1.12;
+        letter-spacing: -0.025em;
+    }
+
+    .section-title h2 {
+        font-size: clamp(2rem, 7vw, 3rem);
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .info-card h3 {
+        font-size: 1.35rem;
+    }
+
+    .result-box h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .case-card h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .hero-content h1 {
+        font-size: 2.1rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.9rem;
+    }
+
+    .result-box h2 {
+        font-size: 1.9rem;
+    }
+}

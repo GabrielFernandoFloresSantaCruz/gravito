@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Estudio de Caso — GRAVITO</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- REMIX ICONS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- GLIGHTBOX -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/cases.css">
+
+</head>
+
+<body>
+
+  <div class="grid-background"></div>
+
+  <!-- NAVBAR -->
+  <header>
+
+    <nav class="navbar">
+
+      <a href="index.html" class="logo" aria-label="GRAVITO - Inicio">
+        <img
+          src="/assets/images/LogoPage.webp"
+          alt="GRAVITO"
+          class="logo-img">
+      </a>
+
+      <!-- HAMBURGUESA -->
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-links">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+
+        <li>
+          <a href="about.html">Sobre mí</a>
+        </li>
+
+        <li>
+          <a href="projects.html" class="active">
+            Proyectos
+          </a>
+        </li>
+
+        <li class="mobile-contact">
+          <a href="contact.html">Contacto</a>
+        </li>
+
+      </ul>
+
+      <a href="contact.html" class="nav-btn">
+        Contacto
+      </a>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- HERO DEL ESTUDIO DE CASO -->
+    <section class="case-hero" id="caseHero">
+
+      <div class="case-hero-content">
+
+        <a href="projects.html" class="back-link">
+          <i class="ri-arrow-left-line"></i>
+          Volver a proyectos
+        </a>
+
+        <div class="case-hero-heading">
+
+          <span class="case-eyebrow">
+            ESTUDIO DE CASO
+          </span>
+
+          <span class="case-year" id="caseYear"></span>
+
+        </div>
+
+        <h1 id="caseTitle">Cargando...</h1>
+
+        <p class="case-subtitle" id="caseSubtitle"></p>
+
+        <div class="case-tags" id="caseTags"></div>
+
+      </div>
+
+      <!-- IMAGEN PRINCIPAL -->
+      <div class="case-cover" id="caseCover">
+
+        <img
+          id="caseHeroImage"
+          src=""
+          alt=""
+          hidden>
+
+      </div>
+
+    </section>
+
+    <!-- INFORMACIÓN GENERAL -->
+    <section class="case-overview">
+
+      <div class="overview-grid">
+
+        <div class="overview-item">
+          <span>TIPO DE PROYECTO</span>
+          <p id="caseType"></p>
+        </div>
+
+        <div class="overview-item">
+          <span>CATEGORÍA</span>
+          <p id="caseCategory"></p>
+        </div>
+
+        <div class="overview-item">
+          <span>CLIENTE / CONTEXTO</span>
+          <p id="caseClient"></p>
+        </div>
+
+        <div class="overview-item">
+          <span>AÑO</span>
+          <p id="caseOverviewYear"></p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="case-layout">
+
+      <!-- ÍNDICE -->
+      <aside class="case-sidebar">
+
+        <div class="sidebar-inner">
+
+          <span class="sidebar-label">
+            EN ESTE PROYECTO
+          </span>
+
+          <nav
+            class="case-navigation"
+            id="caseNavigation"
+            aria-label="Secciones del estudio de caso">
+          </nav>
+
+        </div>
+
+      </aside>
+
+      <!-- SECCIONES DINÁMICAS -->
+      <div class="case-content" id="caseContent">
+
+        <!--
+          El JavaScript generará aquí:
+          - Introducción
+          - Problema
+          - Objetivo
+          - Proceso
+          - Subsecciones
+          - Resultado
+          - Aprendizajes
+          - Imágenes
+        -->
+
+      </div>
+
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section class="case-technologies">
+
+      <div class="section-heading">
+
+        <span class="section-eyebrow">
+          HERRAMIENTAS Y TECNOLOGÍAS
+        </span>
+
+        <h2>Tecnologías utilizadas</h2>
+
+      </div>
+
+      <div class="tech-grid" id="caseTechnologies"></div>
+
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="case-cta">
+
+      <div class="case-cta-box">
+
+        <span class="section-eyebrow">
+          EXPLORA MÁS
+        </span>
+
+        <h2>
+          Cada proyecto cuenta una historia.
+        </h2>
+
+        <p>
+          Descubre más experiencias digitales,
+          procesos de diseño y soluciones creativas.
+        </p>
+
+        <a href="projects.html" class="primary-btn">
+          Ver más proyectos
+          <i class="ri-arrow-right-up-line"></i>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-content">
+
+      <div>
+
+        <a href="index.html" class="logo">
+          <img
+            src="/assets/images/LogoPage.webp"
+            alt="GRAVITO"
+            class="logo-img">
+        </a>
+
+        <p>Experiencias digitales con identidad.</p>
+
+      </div>
+
+      <div class="socials">
+
+        <a href="#" aria-label="Instagram">
+          <i class="ri-instagram-line"></i>
+        </a>
+
+        <a href="#" aria-label="GitHub">
+          <i class="ri-github-line"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          <i class="ri-linkedin-line"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <script src="js/cases.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Proyecto — GRAVITO</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- REMIX ICONS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- SWIPER -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- GLIGHTBOX -->
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/project.css">
+</head>
+
+<body>
+
+  <div class="grid-background"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+
+      <a href="index.html" class="logo" aria-label="GRAVITO - Inicio">
+        <img
+          src="/assets/images/LogoPage.webp"
+          alt="Logotipo GRAVITO"
+          class="logo-img">
+      </a>
+
+      <!-- MENÚ HAMBURGUESA -->
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li>
+          <a href="projects.html" class="active">
+            Proyectos
+          </a>
+        </li>
+        <li class="mobile-contact">
+          <a href="contact.html">Contacto</a>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="nav-btn">
+        Contacto
+      </a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PROJECT HERO -->
+    <section class="project-hero" id="projectHero">
+
+      <div class="hero-content">
+
+        <span class="hero-tag" id="projectCategory">
+          CATEGORÍA
+        </span>
+
+        <h1 id="projectTitle">
+          Cargando...
+        </h1>
+
+        <p id="projectDescription">
+          Cargando descripción del proyecto...
+        </p>
+
+        <div class="hero-buttons" id="projectButtons"></div>
+
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image" id="projectImage"></div>
+      </div>
+
+    </section>
+
+    <!-- PROBLEMA Y SOLUCIÓN -->
+    <section class="info-section">
+
+      <div class="info-grid">
+
+        <div class="info-card">
+          <h3>Problema</h3>
+          <p id="projectProblem"></p>
+        </div>
+
+        <div class="info-card">
+          <h3>Solución</h3>
+          <p id="projectSolution"></p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- RESULTADO -->
+    <section class="result-section">
+
+      <div class="result-box">
+
+        <h2>Resultado</h2>
+
+        <p id="projectResult"></p>
+
+      </div>
+
+    </section>
+
+    <!-- CONTENIDO MULTIMEDIA DINÁMICO -->
+    <div id="projectMediaSection"></div>
+
+    <!-- TECNOLOGÍAS -->
+    <section class="tech-section">
+
+      <div class="section-title">
+        <h2>Tecnologías</h2>
+      </div>
+
+      <div class="tech-grid" id="techGrid"></div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-content">
+
+      <div>
+        <a href="index.html" class="logo">
+          <img
+            src="/assets/images/LogoPage.webp"
+            alt="GRAVITO"
+            class="logo-img">
+        </a>
+
+        <p>Experiencias digitales con identidad.</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script src="js/project.js"></script>
+
+</body>
+</html>

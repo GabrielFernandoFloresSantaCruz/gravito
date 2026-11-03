@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto — GRAVITO</title>
+
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- ICONOS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- SWIPER -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <div class="grid-background"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+
+      <a href="index.html" class="logo" aria-label="GRAVITO - Inicio">
+        <img src="/assets/images/LogoPage.webp"
+             alt="Logotipo GRAVITO"
+             class="logo-img">
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="projects.html">Proyectos</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contacto</a></li>
+
+        <li class="mobile-contact">
+          <a href="#formSection">Hablemos</a>
+        </li>
+      </ul>
+
+      <a href="#formSection" class="nav-btn">Hablemos</a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="contact-hero">
+
+      <div class="hero-content" data-aos="fade-right">
+        <span class="hero-tag">CONTACTO</span>
+
+        <h1>
+          Creamos algo<br>
+          inmersivo juntos.
+        </h1>
+
+        <p>
+          Ya sea que necesites un sitio web futurista,
+          gráficos en movimiento o desarrollo frontend,
+          GRAVITO transforma ideas en experiencias interactivas.
+        </p>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="hero-card">
+          <object
+            type="image/svg+xml"
+            data="assets/video/ContactLottie.svg"
+            class="contact-svg-visual"
+            aria-label="Animación visual de contacto GRAVITO">
+          </object>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="services-section" id="services">
+
+      <div class="section-title">
+        <h2>Servicios</h2>
+        <p>
+          Selecciona un servicio para completar el formulario automáticamente.
+        </p>
+      </div>
+
+      <div class="services-grid servicesSwiper swiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="service-card swiper-slide"
+               data-service="Web Design"
+               role="button"
+               tabindex="0"
+               aria-pressed="false">
+
+            <div class="service-icon">
+              <i class="ri-window-line"></i>
+            </div>
+
+            <h3>Diseño Web</h3>
+
+            <p>
+              Interfaces futuristas y sitios web modernos y responsivos.
+            </p>
+
+            <span>$120+</span>
+          </div>
+
+          <div class="service-card swiper-slide"
+               data-service="Frontend Development"
+               role="button"
+               tabindex="0"
+               aria-pressed="false">
+
+            <div class="service-icon">
+              <i class="ri-code-box-line"></i>
+            </div>
+
+            <h3>Desarrollo Frontend</h3>
+
+            <p>
+              Sistemas web interactivos utilizando tecnologías modernas.
+            </p>
+
+            <span>$180+</span>
+          </div>
+
+          <div class="service-card swiper-slide"
+               data-service="UI / UX Design"
+               role="button"
+               tabindex="0"
+               aria-pressed="false">
+
+            <div class="service-icon">
+              <i class="ri-layout-4-line"></i>
+            </div>
+
+            <h3>Diseño UI / UX</h3>
+
+            <p>
+              Interfaces centradas en el usuario y enfocadas en la inmersión.
+            </p>
+
+            <span>$100+</span>
+          </div>
+
+          <div class="service-card swiper-slide"
+               data-service="Video Editing"
+               role="button"
+               tabindex="0"
+               aria-pressed="false">
+
+            <div class="service-icon">
+              <i class="ri-movie-line"></i>
+            </div>
+
+            <h3>Edición de Video</h3>
+
+            <p>
+              Gráficos en movimiento y edición inspirada en la estética synthwave.
+            </p>
+
+            <span>$90+</span>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination services-pagination"></div>
+
+      </div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="form-section" id="formSection">
+
+      <div class="form-grid">
+
+        <!-- INFORMACIÓN -->
+        <div class="form-info" data-aos="fade-right">
+
+          <span class="small-tag">SOLICITUD DE PROYECTO</span>
+
+          <h2>
+            Construye tu próxima experiencia digital.
+          </h2>
+
+          <p>
+            Completa el formulario y describe tu idea,
+            proyecto o consulta. Cuantos más detalles proporciones,
+            mejor se podrá diseñar la experiencia.
+          </p>
+
+          <div class="info-cards">
+
+            <div class="info-card">
+              <i class="ri-time-line"></i>
+
+              <div>
+                <h4>Tiempo de Respuesta</h4>
+                <p>Normalmente entre 24 y 48 horas.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="ri-global-line"></i>
+
+              <div>
+                <h4>Trabajo Remoto</h4>
+                <p>Disponible para colaboraciones en todo el mundo.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="contact-form-container" data-aos="fade-left">
+
+          <form id="contactForm">
+
+            <div class="input-group">
+              <label for="fullName">Nombre Completo</label>
+              <input
+                id="fullName"
+                name="fullName"
+                type="text"
+                required
+                autocomplete="name"
+                placeholder="Tu nombre">
+            </div>
+
+            <div class="input-group">
+              <label for="email">Correo Electrónico</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+                placeholder="tu@correo.com">
+            </div>
+
+            <div class="input-group">
+              <label for="company">Empresa / Marca</label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                placeholder="Opcional">
+            </div>
+
+            <div class="input-group">
+              <label for="serviceSelect">Servicio</label>
+
+              <select id="serviceSelect" name="service">
+                <option value="General Inquiry">Consulta General</option>
+                <option value="Web Design">Diseño Web</option>
+                <option value="Frontend Development">Desarrollo Frontend</option>
+                <option value="UI / UX Design">Diseño UI / UX</option>
+                <option value="Video Editing">Edición de Video</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="budget">Presupuesto Estimado</label>
+
+              <select id="budget" name="budget">
+                <option>No especificado</option>
+                <option>$100 - $300</option>
+                <option>$300 - $600</option>
+                <option>$600 - $1000</option>
+                <option>$1000+</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="projectDetails">Detalles del Proyecto</label>
+
+              <textarea
+                id="projectDetails"
+                name="projectDetails"
+                required
+                placeholder="Cuéntame sobre tu idea o proyecto..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              Enviar Solicitud
+            </button>
+
+            <div
+              class="success-message"
+              id="successMessage"
+              role="status"
+              aria-live="polite">
+
+              <i class="ri-information-line"></i>
+
+              <h3>Formulario completado</h3>
+
+              <p>
+                Los datos han sido validados, pero el envío
+                todavía no está conectado a un servicio de correo.
+              </p>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+
+      <div>
+        <a href="index.html" class="logo" aria-label="Ir al inicio">
+          <img
+            src="/assets/images/LogoPage.webp"
+            alt="GRAVITO"
+            class="logo-img">
+        </a>
+
+        <p>Experiencias digitales con identidad.</p>
+      </div>
+
+      <div class="socials">
+        <a href="#" aria-label="Instagram">
+          <i class="ri-instagram-line"></i>
+        </a>
+
+        <a href="#" aria-label="GitHub">
+          <i class="ri-github-line"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          <i class="ri-linkedin-line"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+</html>

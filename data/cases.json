@@ -1,0 +1,185 @@
+
+{
+  "cases": [
+    {
+      "id": "nox-app",
+      "title": "NOX",
+      "subtitle": "Aplicación móvil de turismo nocturno",
+      "category": "Diseño y Desarrollo Móvil",
+      "year": "2025",
+      "type": "Proyecto grupal",
+      "client": "Proyecto académico",
+      "heroImage": "assets/images/Nox/NoxCover.png",
+      "technologies": [
+        "Ionic",
+        "Firebase",
+        "UI/UX",
+        "Desarrollo Móvil"
+      ],
+      "sections": [
+        {
+          "id": "introduction",
+          "number": "01",
+          "title": "¿Qué es NOX?",
+          "paragraphs": [
+            "NOX es una aplicación móvil de turismo nocturno diseñada para conectar a residentes y turistas con las actividades y experiencias disponibles en una ciudad durante la noche.",
+            "Su propuesta se centra en un mapa interactivo en tiempo real que permite descubrir restaurantes, fiestas, eventos y otras actividades cercanas. Además, integra funcionalidades para realizar reservas gastronómicas, comprar entradas y gestionar pagos desde una misma plataforma.",
+            "Inspirada en la experiencia de exploración de Pokémon GO, NOX busca transformar la manera en que las personas descubren y disfrutan el entretenimiento nocturno."
+          ],
+          "media": []
+        },
+        {
+          "id": "problem",
+          "number": "02",
+          "title": "El problema",
+          "paragraphs": [
+            "Las opciones de entretenimiento nocturno suelen encontrarse dispersas entre redes sociales, páginas de eventos y plataformas de reservas, dificultando que los usuarios encuentren información actualizada sobre las actividades disponibles.",
+            "Esta fragmentación obliga a utilizar diferentes servicios para descubrir lugares, reservar comida o comprar entradas.",
+            "El principal desafío fue desarrollar una solución digital que centralizara estas experiencias y facilitara tanto el descubrimiento de actividades como los procesos de reserva y compra."
+          ],
+          "media": []
+        },
+        {
+          "id": "objective",
+          "number": "03",
+          "title": "El objetivo",
+          "paragraphs": [
+            "Diseñar y desarrollar una aplicación móvil que facilite la exploración de actividades nocturnas mediante un mapa interactivo, integrando servicios gastronómicos y eventos en una sola plataforma.",
+            "La propuesta estuvo dirigida tanto a residentes como a turistas interesados en descubrir nuevas experiencias, consultar actividades disponibles y realizar reservas o compras de manera sencilla.",
+            "El proyecto se planteó como un Producto Mínimo Viable (MVP), priorizando las funcionalidades esenciales para ofrecer una experiencia de uso completa."
+          ],
+          "media": []
+        },
+        {
+          "id": "process",
+          "number": "04",
+          "title": "El proceso de diseño y desarrollo",
+          "paragraphs": [
+            "El proyecto se desarrolló de manera colaborativa, combinando el diseño de interfaces, la creación de prototipos y la programación de las principales funcionalidades de la aplicación.",
+            "Para su implementación se utilizó Ionic como tecnología de desarrollo móvil y Firebase para la gestión de la base de datos.",
+            "El proceso se organizó en torno a las funcionalidades principales de NOX, priorizando la integración de los diferentes recorridos del usuario."
+          ],
+          "media": [],
+          "subsections": [
+            {
+              "id": "concept",
+              "title": "Conceptualización y exploración",
+              "paragraphs": [
+                "La propuesta tomó como referencia la dinámica de exploración de Pokémon GO, adaptando el concepto de descubrimiento mediante un mapa interactivo al contexto del turismo nocturno.",
+                "Se planteó una interfaz que permitiera visualizar actividades cercanas y distinguir entre establecimientos gastronómicos y eventos, facilitando el acceso a información y servicios desde un mismo entorno."
+              ],
+              "media": [
+                {
+                  "type": "image",
+                  "src": "assets/images/Nox/map.png",
+                  "alt": "Mapa interactivo de NOX"
+                }
+              ]
+            },
+            {
+              "id": "ux-design",
+              "title": "Diseño de la experiencia",
+              "paragraphs": [
+                "Se diseñaron las pantallas y los flujos de navegación necesarios para conectar las diferentes funcionalidades de NOX.",
+                "La experiencia se estructuró alrededor del mapa principal, desde el cual los usuarios podían explorar actividades, consultar opciones gastronómicas y acceder a los procesos de reserva o compra de entradas.",
+                "También se desarrollaron interfaces para el registro, inicio de sesión, carrito de compras, pagos y gestión del perfil."
+              ],
+              "media": [
+                {
+                  "type": "image",
+                  "src": "assets/images/Nox/events.png",
+                  "alt": "Interfaz de eventos de NOX"
+                },
+                {
+                  "type": "image",
+                  "src": "assets/images/Nox/food.png",
+                  "alt": "Interfaz gastronómica de NOX"
+                }
+              ]
+            },
+            {
+              "id": "authentication",
+              "title": "Autenticación de usuarios",
+              "paragraphs": [
+                "Una de mis principales contribuciones fue el desarrollo del sistema de autenticación, incluyendo los procesos de registro e inicio de sesión.",
+                "Se trabajó en los formularios, las validaciones de datos y los flujos de acceso para ofrecer una experiencia clara y consistente desde el primer contacto con la aplicación."
+              ],
+              "media": [
+                {
+                  "type": "image",
+                  "src": "assets/images/Nox/login.png",
+                  "alt": "Pantalla de inicio de sesión"
+                },
+                {
+                  "type": "image",
+                  "src": "assets/images/Nox/register.png",
+                  "alt": "Pantalla de registro de usuarios"
+                }
+              ]
+            },
+            {
+              "id": "checkout",
+              "title": "Carrito de compras y métodos de pago",
+              "paragraphs": [
+                "También participé en el desarrollo de las funcionalidades relacionadas con el carrito de compras y los métodos de pago.",
+                "Estos procesos permitían gestionar las selecciones realizadas por los usuarios, tanto para servicios gastronómicos como para la compra de entradas a eventos.",
+                "El objetivo fue integrar ambas experiencias comerciales dentro de un flujo de compra comprensible y coherente con el resto de la aplicación."
+              ],
+              "media": [
+                {
+                  "type": "image",
+                  "src": "assets/images/Nox/cart.png",
+                  "alt": "Carrito de compras de NOX"
+                },
+                {
+                  "type": "image",
+                  "src": "assets/images/Nox/payment.png",
+                  "alt": "Métodos de pago de NOX"
+                }
+              ]
+            },
+            {
+              "id": "development",
+              "title": "Integración y desarrollo del MVP",
+              "paragraphs": [
+                "Durante la implementación, uno de los mayores desafíos fue conectar las distintas funcionalidades para que trabajaran de manera conjunta.",
+                "Se priorizó el desarrollo de los componentes principales de NOX, utilizando Firebase para gestionar la información necesaria para el funcionamiento de la aplicación.",
+                "Debido al alcance del MVP, la sección de perfil de usuario quedó parcialmente desarrollada. Aunque su diseño estaba planteado, únicamente se completaron funcionalidades como la edición del perfil y la actualización del historial."
+              ],
+              "media": [
+                {
+                  "type": "image",
+                  "src": "assets/images/Nox/profile.png",
+                  "alt": "Interfaz del perfil de usuario"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "outcome",
+          "number": "05",
+          "title": "El resultado",
+          "paragraphs": [
+            "El proyecto dio como resultado un MVP funcional de NOX, que integró las principales características de una aplicación orientada al turismo nocturno.",
+            "Se desarrollaron funcionalidades de exploración mediante mapa, consulta de actividades, reservas gastronómicas, compra de entradas, autenticación de usuarios y gestión de compras y pagos.",
+            "Aunque la sección de perfil no se implementó en su totalidad, el equipo logró completar las funcionalidades prioritarias y conectar los principales recorridos de la aplicación.",
+            "El resultado permitió materializar una propuesta que combina descubrimiento, entretenimiento y servicios digitales en una experiencia móvil unificada."
+          ],
+          "media": []
+        },
+        {
+          "id": "learning",
+          "number": "06",
+          "title": "Aprendizajes clave",
+          "paragraphs": [
+            "El desarrollo de NOX permitió comprender la importancia de integrar diferentes funcionalidades dentro de una misma experiencia digital, especialmente cuando intervienen procesos de autenticación, gestión de información y compras.",
+            "El trabajo colaborativo también evidenció la necesidad de coordinar el diseño y la programación para mantener la coherencia entre las distintas secciones de la aplicación.",
+            "Finalmente, el enfoque de MVP permitió aprender a priorizar funcionalidades, administrar el alcance del proyecto y concentrar los esfuerzos en los componentes esenciales para ofrecer un producto funcional."
+          ],
+          "media": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Proyectos — GRAVITO</title>
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <!-- REMIX ICONS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/projects.css">
+</head>
+
+<body>
+
+  <div class="grid-background"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+
+      <a href="index.html" class="logo" aria-label="GRAVITO - Inicio">
+        <img
+          src="/assets/images/LogoPage.webp"
+          alt="Logotipo GRAVITO"
+          class="logo-img">
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="projects.html" class="active" aria-current="page">Proyectos</a></li>
+        <li class="mobile-contact">
+          <a href="contact.html">Contacto</a>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="nav-btn">
+        Contacto
+      </a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="projects-hero">
+
+      <div class="hero-content" data-aos="fade-up">
+
+        <span class="hero-tag">PROYECTOS</span>
+
+        <h1>
+          Selección de experiencias
+          digitales y sistemas visuales.
+        </h1>
+
+        <p>
+          Una colección curada de interfaces, gráficos en movimiento,
+          experiencias frontend y proyectos experimentales.
+        </p>
+
+      </div>
+
+    </section>
+
+    <!-- FILTROS -->
+    <section class="filter-section">
+
+      <div class="filter-buttons" role="group" aria-label="Filtrar proyectos">
+
+        <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">
+          Todos
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">
+          Diseño Web
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="frontend" aria-pressed="false">
+          Frontend
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="motion" aria-pressed="false">
+          Edición de Video
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="ui" aria-pressed="false">
+          UI / UX
+        </button>
+
+        <button type="button" class="filter-btn" data-filter="game" aria-pressed="false">
+          Juegos
+        </button>
+
+        <!-- ESTUDIOS DE CASO -->
+<button
+  type="button"
+  class="filter-btn"
+  data-filter="cases"
+  aria-pressed="false">
+  Estudios de caso
+</button>
+
+<!-- BLOGS -->
+<button
+  type="button"
+  class="filter-btn"
+  data-filter="blogs"
+  aria-pressed="false">
+  Blogs
+</button>
+
+      </div>
+
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="projects-section">
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Las tarjetas se cargan desde data/projects.json -->
+
+      </div>
+
+      <p class="projects-message" id="projectsMessage" role="status" aria-live="polite" hidden></p>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+
+      <div class="cta-box" data-aos="zoom-in">
+
+        <h2>
+          Construyendo interfaces más allá de lo visual.
+        </h2>
+
+        <p>
+          Combinando identidad, interacción y estética futurista
+          en experiencias digitales inmersivas.
+        </p>
+
+        <a href="contact.html" class="primary-btn">
+          Iniciar un Proyecto
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-content">
+
+      <div>
+        <a href="index.html" class="logo" aria-label="Volver al inicio">
+          <img
+            src="/assets/images/LogoPage.webp"
+            alt="GRAVITO"
+            class="logo-img">
+        </a>
+
+        <p>Experiencias digitales con identidad.</p>
+      </div>
+
+      <div class="socials">
+
+        <a href="#" aria-label="Instagram">
+          <i class="ri-instagram-line"></i>
+        </a>
+
+        <a href="#" aria-label="GitHub">
+          <i class="ri-github-line"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+          <i class="ri-linkedin-line"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/projects.js"></script>
+
+</body>
+</html>

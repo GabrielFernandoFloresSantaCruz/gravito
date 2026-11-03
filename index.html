@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRAVITO — Diseñador y Desarrollador Digital</title>
+
+  <!-- GOOGLE FONTS -->
+<!-- Coloca esto dentro del <head>, justo antes de tu archivo CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<!-- Añade el reproductor de Lottie al final de tu HTML, antes de tu script.js -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- REMIX ICONS -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="grid-background"></div>
+
+  <!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+
+    <a href="/index.html" class="logo" aria-label="GRAVITO - Inicio">
+      <img
+        src="/assets/images/LogoPage.webp"
+        alt="Logo de GRAVITO"
+        class="logo-img"
+      >
+    </a>
+
+    <!-- Botón hamburguesa para móviles -->
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="nav-links"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navegación -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="/about.html">Sobre mí</a></li>
+      <li><a href="/projects.html">Proyectos</a></li>
+      <li class="mobile-contact">
+        <a href="#contact">Contacto</a>
+      </li>
+    </ul>
+
+    <!-- Contacto visible en escritorio -->
+    <a href="#contact" class="nav-btn">Contacto</a>
+
+  </nav>
+</header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-content" data-aos="fade-right">
+      <div class="hero-subtitle">Diseñador Digital • Desarrollador Frontend</div>
+
+      <h1>
+        Creando <span>experiencias</span><br>
+        digitales con<br>
+        identidad.
+      </h1>
+
+      <p>
+        GRAVITO es un portafolio personal enfocado en desarrollo frontend,
+        diseño UI/UX y experiencias digitales interactivas inspiradas en la estética
+        futurista, minimalista y synthwave.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="primary-btn">Explorar Proyectos</a>
+        <a href="#about" class="secondary-btn">Sobre Mí</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+  <div class="hero-card">
+    <!-- Cargamos tu SVG animado protegiendo sus scripts/animaciones internas -->
+    <object 
+      type="image/svg+xml" 
+      data="assets/video/LogoLottie.svg" 
+      class="hero-svg-logo">
+    </object>
+  </div>
+</div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Sobre Mí</h2>
+      <p>
+        Diseñador y desarrollador multidisciplinario enfocado en crear experiencias
+        digitales inmersivas, funcionales y visualmente impactantes.
+      </p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-card">
+  <!-- Listo para que coloques la ruta de tu foto -->
+  <img 
+    src="assets/images/Trabajo.jpeg" 
+    alt="foto de perfil" 
+    class="about-profile-img" 
+  />
+</div>
+
+      <div class="about-content">
+
+        <div class="about-item" data-aos="fade-up">
+          <div class="about-icon">
+            <i class="ri-code-box-line"></i>
+          </div>
+
+          <div>
+            <h4>Desarrollo Frontend</h4>
+            <p>HTML5, CSS3, JavaScript, Angular y experiencias web interactivas.</p>
+          </div>
+        </div>
+
+        <div class="about-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="about-icon">
+            <i class="ri-layout-4-line"></i>
+          </div>
+
+          <div>
+            <h4>Diseño UI / UX</h4>
+            <p>Interfaces centradas en usabilidad, estética e identidad digital.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Proyectos</h2>
+      <p>Una selección de experiencias digitales e interfaces.</p>
+    </div>
+
+    <div class="swiper projectSwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+
+            <div class="project-overlay">
+              <h3>ID — Concepto de Videojuego</h3>
+              <p>Experiencia de pixel-art inspirada en Synthwave.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="ri-window-line"></i>
+            </div>
+
+            <div class="project-overlay">
+              <h3>Concepto UI Interactivo</h3>
+              <p>Diseño de interfaz futurista enfocado en movimiento.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+
+            <div class="project-overlay">
+              <h3>ID — Concepto de Videojuego</h3>
+              <p>Experiencia de pixel-art inspirada en Synthwave.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+
+            <div class="project-overlay">
+              <h3>ID — Concepto de Videojuego</h3>
+              <p>Experiencia de pixel-art inspirada en Synthwave.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+
+            <div class="project-overlay">
+              <h3>ID — Concepto de Videojuego</h3>
+              <p>Experiencia de pixel-art inspirada en Synthwave.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="services">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2>Servicios</h2>
+      <p>
+        Soluciones creativas y técnicas enfocadas en experiencias digitales,
+        interacción e identidad visual.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- CARD 1 -->
+      
+
+    </div>
+
+  <div class="services-grid swiper servicesSwiper">
+    <div class="swiper-wrapper">
+
+        <div class="service-card swiper-slide" data-aos="fade-up">
+
+        <div class="service-top">
+          <div class="service-icon">
+            <i class="ri-window-line"></i>
+          </div>
+
+          <div class="service-price">
+            
+            <span></span>
+          </div>
+        </div>
+
+        <h3>Diseño Web</h3>
+
+        <p>
+          Sitios web modernos y responsivos inspirados en estéticas
+          futuristas e interactivas.
+        </p>
+
+        <ul>
+          <li>Páginas de aterrizaje</li>
+          <li>Sitios web portafolio</li>
+          <li>Diseño responsivo</li>
+          <li>Enfoque UI / UX</li>
+        </ul>
+
+        <a href="/contact.html" class="service-btn">
+          Solicitar Servicio
+        </a>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="service-card swiper-slide" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="service-top">
+          <div class="service-icon">
+            <i class="ri-code-s-slash-line"></i>
+          </div>
+
+          <div class="service-price">
+            
+            <span></span>
+          </div>
+        </div>
+
+        <h3>Desarrollo Frontend</h3>
+
+        <p>
+          Interfaces interactivas desarrolladas con tecnologías modernas
+          y animaciones fluidas.
+        </p>
+
+        <ul>
+          <li>HTML / CSS / JavaScript</li>
+          <li>Angular & Ionic</li>
+          <li>Animaciones</li>
+          <li>Interfaces modernas</li>
+        </ul>
+
+        <a href="#contact" class="service-btn">
+          Solicitar Servicio
+        </a>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="service-card swiper-slide" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="service-top">
+          <div class="service-icon">
+            <i class="ri-movie-2-line"></i>
+          </div>
+
+          <div class="service-price">
+            
+            <span></span>
+          </div>
+        </div>
+
+        <h3>Edición de Video</h3>
+
+        <p>
+          Contenido visual dinámico con gráficos en movimiento y
+          dirección inspirada en synthwave.
+        </p>
+
+        <ul>
+          <li>Videos para redes sociales</li>
+          <li>Gráficos en movimiento</li>
+          <li>Transiciones y FX</li>
+          <li>Edición creativa</li>
+        </ul>
+
+        <a href="#contact" class="service-btn">
+          Solicitar Servicio
+        </a>
+
+      </div>
+
+    </div>
+
+  <div class="swiper-pagination services-pagination"></div>
+</div>
+  </section>
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <div class="contact-box">
+      <h2>Construyamos algo juntos.</h2>
+      <p>¿Interesado en colaborar o crear una experiencia digital juntos?</p>
+
+      <a href="/contact.html" class="primary-btn">
+        Contáctame
+      </a>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+
+      <div>
+        <img src="/assets/images/LogoPage.webp" alt="Logo" class="logo-img"> 
+        <p>Experiencias digitales con identidad.</p>
+      </div>
+
+      <div class="socials">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-github-line"></i></a>
+        <a href="#"><i class="ri-linkedin-line"></i></a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- LIBRARIES -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- CUSTOM JS -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>
