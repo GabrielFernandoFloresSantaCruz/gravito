@@ -94,15 +94,15 @@
     "type": "App",
     "year": "2025",
     "client": "Proyecto Académico Grupal",
-    "heroImage": "assets/images/Nox/NoxCover.png",
+    "heroImage": "assets/images/NOX/NoxCover.png",
     "gallery": [
-      "assets/images/Nox/login.png",
-      "assets/images/Nox/register.png",
-      "assets/images/Nox/map.png",
-      "assets/images/Nox/events.png",
-      "assets/images/Nox/food.png",
-      "assets/images/Nox/cart.png",
-      "assets/images/Nox/payment.png"
+      "assets/images/NOX/login.png",
+      "assets/images/NOX/register.png",
+      "assets/images/NOX/map.png",
+      "assets/images/NOX/events.png",
+      "assets/images/NOX/food.png",
+      "assets/images/NOX/cart.png",
+      "assets/images/NOX/payment.png"
     ],
     "videos": [],
     "description": "Diseño y desarrollo colaborativo de NOX, una aplicación móvil orientada al turismo nocturno que permite descubrir actividades, restaurantes, fiestas y eventos mediante un mapa interactivo en tiempo real. Inspirada en experiencias de exploración como Pokémon GO, la propuesta integra opciones de reserva de comida, compra de entradas y pagos digitales desde una misma plataforma.",

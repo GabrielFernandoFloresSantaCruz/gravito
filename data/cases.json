@@ -9,7 +9,7 @@
       "year": "2025",
       "type": "Proyecto grupal",
       "client": "Proyecto académico",
-      "heroImage": "assets/images/Nox/NoxCover.png",
+      "heroImage": "assets/images/NOX/NoxCover.png",
       "technologies": [
         "Ionic",
         "Firebase",
@@ -71,7 +71,7 @@
               "media": [
                 {
                   "type": "image",
-                  "src": "assets/images/Nox/map.png",
+                  "src": "assets/images/NOX/map.png",
                   "alt": "Mapa interactivo de NOX"
                 }
               ]
@@ -87,12 +87,12 @@
               "media": [
                 {
                   "type": "image",
-                  "src": "assets/images/Nox/events.png",
+                  "src": "assets/images/NOX/events.png",
                   "alt": "Interfaz de eventos de NOX"
                 },
                 {
                   "type": "image",
-                  "src": "assets/images/Nox/food.png",
+                  "src": "assets/images/NOX/food.png",
                   "alt": "Interfaz gastronómica de NOX"
                 }
               ]
@@ -107,12 +107,12 @@
               "media": [
                 {
                   "type": "image",
-                  "src": "assets/images/Nox/login.png",
+                  "src": "assets/images/NOX/login.png",
                   "alt": "Pantalla de inicio de sesión"
                 },
                 {
                   "type": "image",
-                  "src": "assets/images/Nox/register.png",
+                  "src": "assets/images/NOX/register.png",
                   "alt": "Pantalla de registro de usuarios"
                 }
               ]
@@ -128,12 +128,12 @@
               "media": [
                 {
                   "type": "image",
-                  "src": "assets/images/Nox/cart.png",
+                  "src": "assets/images/NOX/cart.png",
                   "alt": "Carrito de compras de NOX"
                 },
                 {
                   "type": "image",
-                  "src": "assets/images/Nox/payment.png",
+                  "src": "assets/images/NOX/payment.png",
                   "alt": "Métodos de pago de NOX"
                 }
               ]
@@ -149,7 +149,7 @@
               "media": [
                 {
                   "type": "image",
-                  "src": "assets/images/Nox/profile.png",
+                  "src": "assets/images/NOX/profile.png",
                   "alt": "Interfaz del perfil de usuario"
                 }
               ]
