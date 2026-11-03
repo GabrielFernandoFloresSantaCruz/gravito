@@ -1,0 +1,875 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Running Text', sans-serif;
+}
+
+/* Evita que el contenido quede debajo del header */
+body {
+  padding-top: 50px;
+  background: #fff;
+  color: #2c2d2c;
+}
+
+/* ============================= */
+/*        TIPOGRAFÍA H           */
+/* ============================= */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Running Text', sans-serif;
+}
+
+/* ============================= */
+/*           HEADER              */
+/* ============================= */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #eb4630;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Running Text', sans-serif;
+}
+
+.header .nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Running Text', sans-serif;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/*            HERO               */
+/* ============================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background: url("img/Frame 13.png") no-repeat center/cover;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Running Text', sans-serif;
+}
+
+.hero-content p {
+  margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+  background: #eb4630;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  font-family: 'Running Text', sans-serif;
+}
+
+.hero .btn:hover {
+  background: #d13a25;
+}
+
+.hero-img {
+  max-width: 40%;
+}
+
+/* ============================= */
+/*           FEATURES            */
+/* ============================= */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 2rem;
+  text-align: left;
+  gap: 2rem;
+  background: #f8f9fa;
+  margin: 1rem 0;
+}
+
+.feature {
+  max-width: 320px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.feature img {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+.feature h3 {
+  font-family: 'Running Text', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2c2d2c;
+}
+
+.feature p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
+
+/* ============================= */
+/*           PROMOS              */
+/* ============================= */
+.promo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+  background: #fdfdfd;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.promo.reverse {
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+.promo img {
+  width: 38%;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.promo img:hover {
+  transform: scale(1.03);
+}
+
+.promo div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo h2 {
+  font-size: 1.8rem;
+  color: #2c2d2c;
+  margin-bottom: 0.5rem;
+  font-family: 'Running Text', sans-serif;
+}
+
+.promo strong {
+  color: #eb4630;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.8rem;
+  font-family: 'Running Text', sans-serif;
+}
+
+.promo p {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ============================= */
+/*         TESTIMONIOS           */
+/* ============================= */
+.testimonios {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin: 1rem 0;
+}
+
+.testimonio {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+.testimonio img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonio h4 {
+  font-family: 'Running Text', sans-serif;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #eb4630;
+  font-size: 1.4rem;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2c2d2c;
+}
+
+/* ============================= */
+/*           WEBINAR             */
+/* ============================= */
+.webinar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 2rem 2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  gap: 0rem;
+  margin: 1rem 0;
+}
+
+/* Contenedor del carrusel (slides + dots) */
+.webinar-info {
+  position: relative;
+  flex: 1 1 60%;
+  background: #2c2d2c;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+
+/* Cada slide */
+.webinar-info .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #2c2d2c;
+  color: #fff;
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 0;
+}
+
+/* El slide activo es el único visible */
+.webinar-info .slide.active {
+  display: flex;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Imagen del primer slide */
+.webinar-info .slide:first-child {
+  padding: 0;
+  background: none;
+}
+
+.webinar-info .slide:first-child img.slide-image-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Evita que la imagen del primer slide afecte los demás */
+.webinar-info .slide:not(:first-child) img {
+  display: none;
+}
+
+/* Imagen completa para el primer slide */
+.slide-image-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Espaciado textos del slider --- */
+.webinar-info .slide h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Running Text', sans-serif;
+  text-align: center;
+}
+
+.webinar-info .slide p,
+.webinar-info .slide ul {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #f0f0f0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- Dots CON FONDO --- */
+.carousel-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+  background: rgba(44, 45, 44, 0.7);
+  padding: 8px 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.carousel-dots .dot {
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.carousel-dots .dot.active {
+  opacity: 1;
+  transform: scale(1.2);
+  background: #eb4630;
+  border-color: #fff;
+}
+
+.carousel-dots .dot:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* --- Formulario --- */
+.webinar-form {
+  flex: 1 1 35%;
+  background: #eb4630;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: -10px 10px 0px #2c2d2c;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.webinar-form h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Running Text', sans-serif;
+}
+
+.webinar-form label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  font-family: 'Running Text', sans-serif;
+}
+
+.webinar-form input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: 'Running Text', sans-serif;
+}
+
+.webinar-form button {
+  margin-top: 1.2rem;
+  padding: 0.8rem;
+  width: 100%;
+  background: #2c2d2c;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Running Text', sans-serif;
+}
+
+.webinar-form button:hover {
+  background: #000;
+}
+
+/* ============================= */
+/*           FOOTER              */
+/* ============================= */
+.footer {
+  background: #eb4630;
+  color: #fff;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.footer h4 {
+  margin-bottom: 0.5rem;
+  font-family: 'Running Text', sans-serif;
+}
+
+/* ============================= */
+/*    ESTILOS WEBINAR EXTRAS     */
+/* ============================= */
+.confirmation-message {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.webinar-details {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 8px;
+}
+
+.webinar-details p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+/* ============================= */
+/*           FAQ ACORDEÓN        */
+/* ============================= */
+.faq {
+  margin: 1rem 0;
+  text-align: center;
+  padding: 0 1rem; /* Padding lateral para móvil */
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 1.5rem auto;
+  padding: 0 1rem; /* Padding interno */
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  width: 100%; /* Asegurar ancho completo */
+}
+
+.faq-question {
+  padding: 1rem 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #eb4630;
+  transition: color 0.3s ease;
+  text-align: left; /* Alinear texto a la izquierda */
+  width: 100%; /* Ancho completo */
+}
+
+.faq-question:hover {
+  color: #d13a25;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0;
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.faq-answer p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 1rem 0; /* Padding solo arriba y abajo */
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Evitar que el icono se reduzca */
+  margin-left: 1rem; /* Espacio entre texto e icono */
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* ============================= */
+/*    MEDIA QUERY TABLET         */
+/* ============================= */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .features {
+    padding: 1.5rem 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .feature {
+    max-width: 280px;
+    padding: 1.2rem;
+  }
+  
+  .promo {
+    padding: 2rem 2rem;
+  }
+
+  /* FAQ Tablet */
+  .faq {
+    padding: 0 1.5rem;
+  }
+  
+  .faq-container {
+    padding: 0;
+  }
+}
+
+/* ============================= */
+/*    MEDIA QUERY MOBILE         */
+/* ============================= */
+@media (max-width: 768px) {
+  /* Header */
+  .header {
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .header .nav {
+    display: none;
+  }
+  
+  .header .logo {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 0;
+  }
+  
+  .hero-content {
+    max-width: 100%;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero-img {
+    max-width: 80%;
+    margin-top: 1.5rem;
+  }
+
+  /* FEATURES MOBILE */
+  .features {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    background: #f8f9fa;
+    margin: 0.5rem 0;
+  }
+
+  .feature {
+    max-width: 90%;
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+
+  .feature img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+  }
+
+  /* Promo */
+  .promo,
+  .promo.reverse {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin: 0;
+  }
+
+  .promo img {
+    width: 85%;
+  }
+
+  .promo h2 {
+    font-size: 1.5rem;
+  }
+
+  .promo strong {
+    font-size: 1rem;
+  }
+
+  /* Testimonios */
+  .testimonios {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+    gap: 1.5rem;
+  }
+  
+  .testimonio {
+    width: 90%;
+    padding: 1.2rem;
+  }
+
+  /* FAQ MOBILE MEJORADO */
+  .faq {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .faq-container {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 0 0.5rem;
+  }
+
+  .faq-item {
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+  }
+
+  .faq-question {
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    align-items: flex-start; /* Alinear items al inicio */
+  }
+
+  .faq-question span {
+    flex: 1; /* Que el texto ocupe el espacio disponible */
+    margin-right: 1rem; /* Espacio entre texto e icono */
+    text-align: left;
+  }
+
+  .faq-answer {
+    padding: 0 0.5rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 0.8rem;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0.8rem 0.5rem 1rem;
+  }
+
+  .faq-icon {
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  /* WEBINAR MOBILE - SIN ESPACIO ENTRE FORMULARIO E INFO */
+  .webinar {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+    gap: 0;
+  }
+  
+  .webinar-info,
+  .webinar-form {
+    width: 100%;
+    flex: unset;
+    border-radius: 12px;
+    margin-bottom: 0;
+  }
+  
+  .webinar-info {
+    min-height: 500px;
+    margin-bottom: 0;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .webinar-form {
+    border-radius: 0 0 12px 12px;
+    margin-top: -1px;
+    padding: 1.5rem;
+  }
+  
+  .slide {
+    height: 480px;
+    padding: 1.5rem;
+  }
+  
+  .webinar-info .slide h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .webinar-info .slide ul {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .carousel-dots {
+    bottom: 15px;
+    padding: 6px 12px;
+  }
+
+  .webinar-form h3 {
+    font-size: 1.3rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* ============================= */
+/*    MEDIA QUERY MOBILE PEQUEÑO */
+/* ============================= */
+@media (max-width: 480px) {
+  .webinar-info {
+    min-height: 450px;
+  }
+  
+  .slide {
+    height: 420px;
+    padding: 1rem;
+  }
+  
+  .webinar-info .slide h2 {
+    font-size: 1.3rem;
+  }
+  
+  .webinar-form {
+    padding: 1.2rem;
+  }
+
+  .feature {
+    padding: 1rem;
+  }
+
+  .feature img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  /* FAQ Mobile Pequeño */
+  .faq {
+    padding: 0 0.5rem;
+  }
+
+  .faq-container {
+    padding: 0 0.25rem;
+  }
+
+  .faq-question {
+    padding: 0.8rem 0.25rem;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0.6rem 0.25rem 0.8rem;
+  }
+}
